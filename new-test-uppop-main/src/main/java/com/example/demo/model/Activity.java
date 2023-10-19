@@ -48,5 +48,12 @@ public class Activity {
     @Column(name = "detail")
     private List<String> detail;
 
+    @CreationTimestamp
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
+
+    @Column(name = "id_admin")
+    private Long id_admin;
+
     // getters and setters
 }
