@@ -1,13 +1,13 @@
 package com.example.demo.model;
 
-
 import java.time.LocalDate;
+import java.time.LocalDateTime;  // Added import for LocalDateTime
 import java.time.LocalTime;
 import java.util.List;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;  // Added import for CreationTimestamp
 import lombok.Data;
-
 
 @Entity
 @Data
