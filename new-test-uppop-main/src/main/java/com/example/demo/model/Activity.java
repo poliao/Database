@@ -1,13 +1,16 @@
 package com.example.demo.model;
 
+
 import java.time.LocalDate;
-import java.time.LocalDateTime;  // Added import for LocalDateTime
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
-import javax.persistence.*;
-import org.hibernate.annotations.CreationTimestamp;  // Added import for CreationTimestamp
+import org.hibernate.annotations.CreationTimestamp;
+
+import jakarta.persistence.*;
 import lombok.Data;
+
 
 @Entity
 @Data
@@ -55,5 +58,6 @@ public class Activity {
     @Column(name = "id_admin")
     private Long id_admin;
 
-    // getters and setters
+    
+    
 }
